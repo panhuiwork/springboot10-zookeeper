@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import com.alibaba.dubbo.config.annotation.Service;
 
 
-@Service //dubbo的@service将服务发布出去
+@Service(version="1.0.0") //dubbo的@service将服务发布出去
 @Component
 public class TicketServiceImpl implements TicketService{
 

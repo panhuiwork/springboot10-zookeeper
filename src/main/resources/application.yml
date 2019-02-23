@@ -2,11 +2,15 @@ dubbo:
   application:
     name: provider-ticket
   registry:
-    address: 192.168.0.11:2181
-    protocol: zookeeper
+    address: zookeeper://127.0.0.1:2181
   scan:
     base-packages:
      - com.geral.springboot10.ticket.service
+  protocol:
+    name: dubbo
+    port: 20880
 logging:
   level:
    com.geral.springboot10.ticket.service: DEBUG
+server:
+  port: 8822
